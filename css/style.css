@@ -13,6 +13,10 @@ aside {
     left: 0px;
 }
 
+#view table {
+    display: table;
+}
+
 #view p {
     margin-left: 1em;
     margin-right: 1em;
@@ -21,6 +25,10 @@ aside {
 #view table td {
     line-height: 200%;
     padding-left: 2em;
+}
+
+.large-text {
+    font-size: 120%;
 }
 
 div#indicator {
@@ -34,3 +42,33 @@ div#indicator {
     border: none;
     margin: 5px 0 5px 0;
 }
+
+div#overlay {
+    position: absolute;
+    z-index: 99;
+    top: 100px;
+    left: 0px;
+    background-color: rgba(128, 128, 128, 0.2);
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: moz-none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+div#overlay table {
+    display: table;
+}
+
+div#overlay table tr {
+    border: 1px solid #888;
+    line-height: 200%;
+    text-align: right;
+    color: #333;
+}
+
+tr:nth-child(2n-1).blue td, tr.blue td {
+  background: #1f8dd6;
+  color: #fff;
+}
+
