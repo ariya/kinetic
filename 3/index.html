@@ -1,0 +1,187 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no maximum-scale=1">
+  <title>Kinetic Scrolling</title>
+  <link rel="stylesheet" href="../css/pure-nr-min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/raf.js"></script>
+  <script src="scroll.js"></script>
+</head>
+<body>
+  <div class="pure-g" id="content">
+    <div class="pure-u-1" id="overlay">
+    <table class="pure-u-1 pure-table pure-table-horizontal">
+      <tbody>
+        <tr><td>&larr; Choose color</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="pure-u-1" id="view">
+      <table class="pure-u-1 pure-table pure-table-horizontal">
+        <tbody>
+          <tr class="blue" id="row"><td>Kinetic scrolling with snap-to-grid</td></tr>
+          <tr class="blue"><td>No edge bouncing effect</td></tr>
+          <tr><td>&nbsp;</td></tr>
+          <tr><td>&nbsp;</td></tr>
+          <tr><td>Alice Blue</td></tr>
+          <tr><td>Antique White</td></tr>
+          <tr><td>Aqua</td></tr>
+          <tr><td>Aquamarine</td></tr>
+          <tr><td>Azure</td></tr>
+          <tr><td>Beige</td></tr>
+          <tr><td>Bisque</td></tr>
+          <tr><td>Black</td></tr>
+          <tr><td>Blanched Almond</td></tr>
+          <tr><td>Blue</td></tr>
+          <tr><td>Blue Violet</td></tr>
+          <tr><td>Brown</td></tr>
+          <tr><td>Burlywood</td></tr>
+          <tr><td>Cadet Blue</td></tr>
+          <tr><td>Chartreuse</td></tr>
+          <tr><td>Chocolate</td></tr>
+          <tr><td>Coral</td></tr>
+          <tr><td>Cornflower</td></tr>
+          <tr><td>Cornsilk</td></tr>
+          <tr><td>Crimson</td></tr>
+          <tr><td>Cyan</td></tr>
+          <tr><td>Dark Blue</td></tr>
+          <tr><td>Dark Cyan</td></tr>
+          <tr><td>Dark Goldenrod</td></tr>
+          <tr><td>Dark Gray</td></tr>
+          <tr><td>Dark Green</td></tr>
+          <tr><td>Dark Khaki</td></tr>
+          <tr><td>Dark Magenta</td></tr>
+          <tr><td>Dark Olive Green</td></tr>
+          <tr><td>Dark Orange</td></tr>
+          <tr><td>Dark Orchid</td></tr>
+          <tr><td>Dark Red</td></tr>
+          <tr><td>Dark Salmon</td></tr>
+          <tr><td>Dark Sea Green</td></tr>
+          <tr><td>Dark Slate Blue</td></tr>
+          <tr><td>Dark Slate Gray</td></tr>
+          <tr><td>Dark Turquoise</td></tr>
+          <tr><td>Dark Violet</td></tr>
+          <tr><td>Deep Pink</td></tr>
+          <tr><td>Deep Sky Blue</td></tr>
+          <tr><td>Dim Gray</td></tr>
+          <tr><td>Dodger Blue</td></tr>
+          <tr><td>Firebrick</td></tr>
+          <tr><td>Floral White</td></tr>
+          <tr><td>Forest Green</td></tr>
+          <tr><td>Fuchsia</td></tr>
+          <tr><td>Gainsboro</td></tr>
+          <tr><td>Ghost White</td></tr>
+          <tr><td>Gold</td></tr>
+          <tr><td>Goldenrod</td></tr>
+          <tr><td>Gray</td></tr>
+          <tr><td>Green</td></tr>
+          <tr><td>Green Yellow</td></tr>
+          <tr><td>Honeydew</td></tr>
+          <tr><td>Hot Pink</td></tr>
+          <tr><td>Indian Red</td></tr>
+          <tr><td>Indigo</td></tr>
+          <tr><td>Ivory</td></tr>
+          <tr><td>Khaki</td></tr>
+          <tr><td>Lavender</td></tr>
+          <tr><td>Lavender Blush</td></tr>
+          <tr><td>Lawn Green</td></tr>
+          <tr><td>Lemon Chiffon</td></tr>
+          <tr><td>Light Blue</td></tr>
+          <tr><td>Light Coral</td></tr>
+          <tr><td>Light Cyan</td></tr>
+          <tr><td>Light Goldenrod</td></tr>
+          <tr><td>Light Gray</td></tr>
+          <tr><td>Light Green</td></tr>
+          <tr><td>Light Pink</td></tr>
+          <tr><td>Light Salmon</td></tr>
+          <tr><td>Light Sea Green</td></tr>
+          <tr><td>Light Sky Blue</td></tr>
+          <tr><td>Light Slate Gray</td></tr>
+          <tr><td>Light Steel Blue</td></tr>
+          <tr><td>Light Yellow</td></tr>
+          <tr><td>Lime</td></tr>
+          <tr><td>Lime Green</td></tr>
+          <tr><td>Linen</td></tr>
+          <tr><td>Magenta</td></tr>
+          <tr><td>Maroon</td></tr>
+          <tr><td>Medium Aquamarine</td></tr>
+          <tr><td>Medium Blue</td></tr>
+          <tr><td>Medium Orchid</td></tr>
+          <tr><td>Medium Purple</td></tr>
+          <tr><td>Medium Sea Green</td></tr>
+          <tr><td>Medium Slate Blue</td></tr>
+          <tr><td>Medium Spring Green</td></tr>
+          <tr><td>Medium Turquoise</td></tr>
+          <tr><td>Medium Violet Red</td></tr>
+          <tr><td>Midnight Blue</td></tr>
+          <tr><td>Mint Cream</td></tr>
+          <tr><td>Misty Rose</td></tr>
+          <tr><td>Moccasin</td></tr>
+          <tr><td>Navajo White</td></tr>
+          <tr><td>Navy</td></tr>
+          <tr><td>Old Lace</td></tr>
+          <tr><td>Olive</td></tr>
+          <tr><td>Olive Drab</td></tr>
+          <tr><td>Orange</td></tr>
+          <tr><td>Orange Red</td></tr>
+          <tr><td>Orchid</td></tr>
+          <tr><td>Pale Goldenrod</td></tr>
+          <tr><td>Pale Green</td></tr>
+          <tr><td>Pale Turquoise</td></tr>
+          <tr><td>Pale Violet Red</td></tr>
+          <tr><td>Papaya Whip</td></tr>
+          <tr><td>Peach Puff</td></tr>
+          <tr><td>Peru</td></tr>
+          <tr><td>Pink</td></tr>
+          <tr><td>Plum</td></tr>
+          <tr><td>Powder Blue</td></tr>
+          <tr><td>Purple</td></tr>
+          <tr><td>Red</td></tr>
+          <tr><td>Rosy Brown</td></tr>
+          <tr><td>Royal Blue</td></tr>
+          <tr><td>Saddle Brown</td></tr>
+          <tr><td>Salmon</td></tr>
+          <tr><td>Sandy Brown</td></tr>
+          <tr><td>Sea Green</td></tr>
+          <tr><td>Seashell</td></tr>
+          <tr><td>Sienna</td></tr>
+          <tr><td>Silver</td></tr>
+          <tr><td>Sky Blue</td></tr>
+          <tr><td>Slate Blue</td></tr>
+          <tr><td>Slate Gray</td></tr>
+          <tr><td>Snow</td></tr>
+          <tr><td>Spring Green</td></tr>
+          <tr><td>Steel Blue</td></tr>
+          <tr><td>Tan</td></tr>
+          <tr><td>Teal</td></tr>
+          <tr><td>Thistle</td></tr>
+          <tr><td>Tomato</td></tr>
+          <tr><td>Turquoise</td></tr>
+          <tr><td>Violet</td></tr>
+          <tr><td>Wheat</td></tr>
+          <tr><td>White</td></tr>
+          <tr><td>White Smoke</td></tr>
+          <tr><td>Yellow</td></tr>
+          <tr><td>&nbsp;</td></tr>
+          <tr><td>&nbsp;</td></tr>
+          <tr><td>&nbsp;</td></tr>
+          <tr><td>&nbsp;</td></tr>
+          <tr><td>&nbsp;</td></tr>
+          <tr><td>&nbsp;</td></tr>
+          <tr><td>&nbsp;</td></tr>
+          <tr><td>&nbsp;</td></tr>
+          <tr><td>&nbsp;</td></tr>
+          <tr><td>&nbsp;</td></tr>
+        </tbody>
+       </table>
+   </div>
+  </div>
+</body>
+</html>
+        </tbody>
+       </table>
+   </div>
+  </div>
+</body>
+</html>
