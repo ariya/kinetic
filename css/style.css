@@ -72,3 +72,12 @@ tr:nth-child(2n-1).blue td, tr.blue td {
   color: #fff;
 }
 
+img.card {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div#stash {
+    visibility: hidden;
+}
