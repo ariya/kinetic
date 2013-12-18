@@ -66,10 +66,11 @@ window.onload = function () {
     function display(i) {
         offset = 0;
         index = i;
-        left.setAttribute('src', images[wrap(index - 1)].getAttribute('src'));
+        center.style[xform] = 'translate3d(0, 0, 0)';
         center.setAttribute('src', images[wrap(index)].getAttribute('src'));
-        right.setAttribute('src', images[wrap(index + 1)].getAttribute('src'));
         scroll(0);
+        left.setAttribute('src', images[wrap(index - 1)].getAttribute('src'));
+        right.setAttribute('src', images[wrap(index + 1)].getAttribute('src'));
     }
 
     function scroll(x) {
