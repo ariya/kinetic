@@ -9,4 +9,7 @@ Smooth acceleration and deceleration.
 \#3: **Snap-to-grid** flick list ([demo](http://ariya.github.io/kinetic/3), [explanation](http://ariya.ofilabs.com/2013/12/javascript-kinetic-scrolling-part-3.html)).<br/>
 Inertial deceleration to stop at the right position.
 
-\#4: _Coming soon_.
+\#4: **Horizontal swipe** to browse photos ([demo](http://ariya.github.io/kinetic/4), [explanation](http://ariya.ofilabs.com/2013/12/javascript-kinetic-scrolling-part-4.html)).<br/>
+Parallax effect included.
+
+\#5: _Coming soon_.
