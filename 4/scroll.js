@@ -11,7 +11,7 @@ window.onload = function () {
 
         count = 10;
         images = [];
-        index = 5;
+        index = 0;
         offset = 0;
         timeConstant = 125; // ms
         pressed = false;
@@ -19,14 +19,13 @@ window.onload = function () {
         snap = window.innerWidth;
 
         view = document.getElementById('content');
-        left = document.getElementById('left');
-        center = document.getElementById('center');
-        right = document.getElementById('right');
+        left = document.getElementById('1');
+        center = document.getElementById('2');
+        right = document.getElementById('3');
 
         left.setAttribute('width', snap + 'px');
         center.setAttribute('width', snap + 'px');
         right.setAttribute('width', snap + 'px');
-
 
         // Predownloads some images.
         stash = document.getElementById('stash');
@@ -64,13 +63,24 @@ window.onload = function () {
     }
 
     function display(i) {
-        offset = 0;
-        index = i;
-        center.style[xform] = 'translate3d(0, 0, 0)';
-        center.setAttribute('src', images[wrap(index)].getAttribute('src'));
-        scroll(0);
+        var id = center.id;
+        if (i < index) {
+            id = left.id;
+            left = document.getElementById(center.id);
+        } else if (i > index) {
+            id = right.id;
+            right = document.getElementById(center.id);
+        }
+        center = document.getElementById(id);
+        index = wrap(i);
+
         left.setAttribute('src', images[wrap(index - 1)].getAttribute('src'));
+        center.setAttribute('src', images[index].getAttribute('src'));
         right.setAttribute('src', images[wrap(index + 1)].getAttribute('src'));
+        scroll(0);
+        left.setAttribute('class', 'leftcard');
+        center.setAttribute('class', 'centercard');
+        right.setAttribute('class', 'rightcard');
     }
 
     function scroll(x) {
@@ -108,7 +118,7 @@ window.onload = function () {
                 scroll(target - delta);
                 requestAnimationFrame(autoScroll);
             } else {
-                display(wrap(index + target / snap));
+                display(index + target / snap);
             }
         }
     }

@@ -72,10 +72,25 @@ tr:nth-child(2n-1).blue td, tr.blue td {
   color: #fff;
 }
 
-img.card {
+img.leftcard {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
+}
+
+img.centercard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+img.rightcard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
 div#stash {
