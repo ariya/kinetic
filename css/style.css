@@ -96,3 +96,20 @@ img.rightcard {
 div#stash {
     visibility: hidden;
 }
+
+div.cover {
+    perspective: 500px;
+    -webkit-perspective: 500px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+div.cover img {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    border: none;
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom,from(transparent), color-stop(70%, transparent), to(rgba(255,255,255,0.4)));
+}
