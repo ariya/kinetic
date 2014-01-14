@@ -12,4 +12,7 @@ Inertial deceleration to stop at the right position.
 \#4: **Horizontal swipe** to browse photos ([demo](http://ariya.github.io/kinetic/4), [explanation](http://ariya.ofilabs.com/2013/12/javascript-kinetic-scrolling-part-4.html)).<br/>
 Parallax effect included.
 
-\#5: _Coming soon_.
+\#5: **Cover Flow** with CSS transform ([demo](http://ariya.github.io/kinetic/5), [explanation](http://ariya.ofilabs.com/2014/01/javascript-kinetic-scrolling-part-5-cover-flow-effect.html)).<br/>
+Flipping images in 3-D space
+
+\#6: _Coming soon_.
