@@ -59,16 +59,6 @@ window.onload = function () {
         alignment = 'translateX(' + (innerWidth - dim) / 2 + 'px) ';
         alignment += 'translateY(' + (innerHeight - dim) / 2 + 'px)';
 
-        // center
-        el = images[wrap(center)];
-        el.style[xform] = alignment +
-            ' translateX(' + (-delta / 2) + 'px)' +
-            ' translateX(' + (dir * shift * tween) + 'px)' +
-            ' translateZ(' + (dist * tween) + 'px)' +
-            ' rotateY(' + (dir * angle * tween) + 'deg)';
-        el.style.zIndex = 0;
-        el.style.opacity = 1;
-
         half = count >> 1;
         for (i = 1; i <= half; ++i) {
             // right side
